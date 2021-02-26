@@ -8,3 +8,5 @@
 3. 服务发现，使用openFeign
 4. 服务降级、熔断、限流，使用hystrix
 6. 订单模块、支付模块、仓库模块，数量都为3
+架构图： 
+![](spring-cloud-order-payment-warehouse.png)
