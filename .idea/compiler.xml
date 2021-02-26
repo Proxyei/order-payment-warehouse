@@ -7,12 +7,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common-domain" />
+        <module name="gateway-9001" />
+        <module name="gateway-9002" />
+        <module name="gateway-9003" />
         <module name="register-center-10001" />
         <module name="register-center-10002" />
         <module name="register-center-10003" />
         <module name="service-order-11001" />
         <module name="service-order-11002" />
         <module name="service-order-11003" />
+        <module name="service-payment-12001" />
+        <module name="service-payment-12002" />
+        <module name="service-payment-12003" />
+        <module name="service-warehouse-13001" />
+        <module name="service-warehouse-13002" />
+        <module name="service-warehouse-13003" />
       </profile>
     </annotationProcessing>
   </component>

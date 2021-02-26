@@ -1,0 +1,12 @@
+server:
+  port: 10001
+
+eureka:
+  instance:
+    hostname: eureka10001.com
+  client:
+    register-with-eureka: false #不注册自己
+    fetch-registry: false #不检索服务
+    service-url:
+      # 单机表示设置暴露服务的地址，如果是集群，就表示向其他机器注册自己
+      defaultZone: http://eureka10002.com:10002/eureka/, http://eureka10003.com:10003/eureka/

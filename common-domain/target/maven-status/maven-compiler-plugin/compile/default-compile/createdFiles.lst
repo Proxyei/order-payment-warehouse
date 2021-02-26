@@ -1,0 +1,4 @@
+com\xywei\domain\order\Order.class
+com\xywei\domain\order\OrderDetail.class
+com\xywei\domain\payment\Payment.class
+com\xywei\domain\warehouse\Goods.class

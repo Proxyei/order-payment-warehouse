@@ -3,12 +3,21 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common-domain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-9001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-9002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-9003" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/register-center-10001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/register-center-10002" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/register-center-10003" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-order-11001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-order-11002" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-order-11003" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-payment-12001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-payment-12002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-payment-12003" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-warehouse-13001" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-warehouse-13002" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-warehouse-13003" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
