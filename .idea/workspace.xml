@@ -1,9 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a1517e7-f4d2-4572-9816-5d9f78ee7878" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/register-center-10001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/register-center-10001/pom.xml" afterDir="false" />
+    <list default="true" id="9a1517e7-f4d2-4572-9816-5d9f78ee7878" name="Default Changelist" comment="重构代码，跑通order-payment-warehouse，未完成集群">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/constant/CommonConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/order/OrderVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/OrderApplication11001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/WareHouseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/dao/OrderDetailDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/openfeign/payment/OpenFeignPaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/openfeign/warehouse/OpenFeignWareHouseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/order/OrderDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/order/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/order/impl/OrderDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/order/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/payment/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/payment/impl/PaymentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/warehouse/WareHouseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/warehouse/impl/WareHouseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/resources/mybatis/mapper/order-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/resources/mybatis/mapper/orderdetail-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/resources/static/js/jquery-3.4.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/resources/templates/order/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/resources/templates/payment/orderList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/main/resources/templates/warehouse/orderstatus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/test/java/com/xywei/test/DBTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11001/src/test/java/com/xywei/test/TestPayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11002/src/main/java/com/xywei/springcloud/OrderApplication11002.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11002/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11003/src/main/java/com/xywei/springcloud/OrderApplication11003.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-order-11003/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-payment-12001/src/main/java/com/xywei/springcloud/PaymentApplication12001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-payment-12001/src/main/java/com/xywei/springcloud/payment/controller/PaymentComtroller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-payment-12001/src/main/java/com/xywei/springcloud/payment/dao/PaymentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-payment-12001/src/main/java/com/xywei/springcloud/payment/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-payment-12001/src/main/java/com/xywei/springcloud/payment/service/impl/PaymentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-payment-12001/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-payment-12001/src/main/resources/mybatis/mapper/payment-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-payment-12001/src/test/java/com/xywei/springcloud/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-warehouse-13001/src/main/java/com/xywei/springcloud/WarehouseApplication13001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-warehouse-13001/src/main/java/com/xywei/springcloud/warehouse/controller/WareHouseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-warehouse-13001/src/main/java/com/xywei/springcloud/warehouse/dao/WareHouseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-warehouse-13001/src/main/java/com/xywei/springcloud/warehouse/service/WareHouseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-warehouse-13001/src/main/java/com/xywei/springcloud/warehouse/service/impl/WareHouseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-warehouse-13001/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-warehouse-13001/src/main/resources/mybatis/mapper/warehouse-mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-warehouse-13001/src/test/java/com/xywei/test/DBTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/payment/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/payment/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-domain/target/classes/com/xywei/domain/payment/Payment.class" beforeDir="false" afterPath="$PROJECT_DIR$/common-domain/target/classes/com/xywei/domain/payment/Payment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-domain/target/common-domain-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-domain/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common-domain/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register-center-10002/target/classes/com/xywei/springcloud/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/register-center-10002/target/test-classes/META-INF/register-center-10002.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/register-center-10002/target/test-classes/com/xywei/springcloud/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order-11001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-order-11001/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order-11002/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-order-11002/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order-11002/src/main/java/com/xywei/springcloud/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order-11002/src/test/java/com/xywei/springcloud/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order-11002/target/classes/com/xywei/springcloud/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order-11002/target/test-classes/com/xywei/springcloud/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order-11003/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-order-11003/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order-11003/src/main/java/com/xywei/springcloud/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order-11003/src/test/java/com/xywei/springcloud/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order-11003/target/classes/com/xywei/springcloud/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-order-11003/target/test-classes/com/xywei/springcloud/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-payment-12001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-payment-12001/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-warehouse-13001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-warehouse-13001/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,6 +100,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_DATA_SOURCES" value="true" />
@@ -44,11 +119,119 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/service-order-11001/src/test/java/com/xywei/test/TestPayment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/PaymentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/resources/templates/warehouse/orderstatus.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service-warehouse-13001/src/main/java/com/xywei/springcloud/warehouse/controller/WareHouseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/WareHouseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/openfeign/warehouse/OpenFeignWareHouseService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/payment/PaymentService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/warehouse/WareHouseService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/payment/impl/PaymentServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/warehouse/impl/WareHouseServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -59,26 +242,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/service-order-11003/pom.xml" />
-        <option value="$PROJECT_DIR$/common-domain/pom.xml" />
-        <option value="$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/OrderDetail.java" />
-        <option value="$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/Order.java" />
-        <option value="$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/Order/Order.java" />
-        <option value="$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/order/Order.java" />
-        <option value="$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/order/payment/Payment.java" />
-        <option value="$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/warehouse/Goods.java" />
+        <option value="$PROJECT_DIR$/service-payment-12001/src/main/java/com/xywei/springcloud/payment/PaymentComtroller.java" />
+        <option value="$PROJECT_DIR$/service-payment-12001/src/main/java/com/xywei/springcloud/PaymentApplication12001.java" />
+        <option value="$PROJECT_DIR$/service-payment-12001/src/test/java/com/xywei/springcloud/test.java" />
+        <option value="$PROJECT_DIR$/service-payment-12001/src/test/java/com/xywei/springcloud/AppTest.java" />
+        <option value="$PROJECT_DIR$/service-payment-12001/pom.xml" />
+        <option value="$PROJECT_DIR$/service-payment-12001/src/main/java/com/xywei/springcloud/payment/service/PaymentService.java" />
+        <option value="$PROJECT_DIR$/service-payment-12001/src/main/java/com/xywei/springcloud/payment/dao/PaymentDao.java" />
+        <option value="$PROJECT_DIR$/service-payment-12001/src/main/java/com/xywei/springcloud/payment/service/impl/PaymentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/service-warehouse-13001/pom.xml" />
+        <option value="$PROJECT_DIR$/service-warehouse-13001/src/main/java/com/xywei/springcloud/warehouseApplication13001.java" />
+        <option value="$PROJECT_DIR$/service-warehouse-13001/src/main/java/com/xywei/springcloud/WarehouseApplication13001.java" />
+        <option value="$PROJECT_DIR$/service-warehouse-13001/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/service-warehouse-13001/src/test/java/com/xywei/test/DBTest.java" />
+        <option value="$PROJECT_DIR$/service-warehouse-13001/src/main/java/com/xywei/springcloud/controller/WareHouseController.java" />
+        <option value="$PROJECT_DIR$/service-warehouse-13001/src/main/java/com/xywei/springcloud/service/WareHouseService.java" />
+        <option value="$PROJECT_DIR$/service-warehouse-13001/src/main/java/com/xywei/springcloud/service/impl/WareHouseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/service-warehouse-13001/src/main/java/com/xywei/springcloud/dao/WareHouseDao.java" />
+        <option value="$PROJECT_DIR$/service-warehouse-13001/src/main/java/com/xywei/springcloud/warehouse/dao/WareHouseDao.java" />
+        <option value="$PROJECT_DIR$/service-warehouse-13001/src/main/java/com/xywei/springcloud/warehouse/service/impl/WareHouseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/service-warehouse-13001/src/main/java/com/xywei/springcloud/warehouse/service/WareHouseService.java" />
+        <option value="$PROJECT_DIR$/service-warehouse-13001/src/main/resources/mybatis/mapper/warehouse-mapper.xml" />
+        <option value="$PROJECT_DIR$/service-order-11001/pom.xml" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/OrderApplication11001.java" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/warehouse/PaymentService.java" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/warehouse/WareHouseService.java" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/resources/templates/warehouse/orderstatus.html" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/resources/mybatis/mapper/order-mapper.xml" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/dao/OrderDao.java" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/service-warehouse-13001/src/main/java/com/xywei/springcloud/warehouse/controller/WareHouseController.java" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/resources/templates/payment/orderList.html" />
+        <option value="$PROJECT_DIR$/service-payment-12001/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/common-domain/src/main/java/com/xywei/constant.java" />
+        <option value="$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/constant/CommonConstant.java" />
         <option value="$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/payment/Payment.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/register-center-10001/src/main/java/com/xywei/springcloud/Register10001.java" />
-        <option value="$PROJECT_DIR$/register-center-10001/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/register-center-10001/pom.xml" />
-        <option value="$PROJECT_DIR$/register-center-10002/pom.xml" />
-        <option value="$PROJECT_DIR$/register-center-10002/src/main/java/com/xywei/springcloud/Register10002.java" />
-        <option value="$PROJECT_DIR$/register-center-10003/pom.xml" />
-        <option value="$PROJECT_DIR$/register-center-10003/src/main/java/com/xywei/springcloud/Register10003.java" />
-        <option value="$PROJECT_DIR$/register-center-10002/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/register-center-10003/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/service-payment-12001/src/main/java/com/xywei/springcloud/payment/controller/PaymentComtroller.java" />
+        <option value="$PROJECT_DIR$/service-payment-12001/src/main/resources/mybatis/mapper/payment-mapper.xml" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/OrderService.java" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/impl/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/openfeign/PaymentService.java" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/openfeign/payment/PaymentService.java" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/order/OrderDetailService.java" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/WareHouseController.java" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/openfeign/payment/OpenFeignPaymentService.java" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/openfeign/warehouse/OpenFeignWareHouseService.java" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/payment/PaymentService.java" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/warehouse/impl/WareHouseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/payment/impl/PaymentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/PaymentController.java" />
+        <option value="$PROJECT_DIR$/service-order-11001/src/test/java/com/xywei/test/TestPayment.java" />
       </list>
     </option>
   </component>
@@ -95,22 +309,44 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="register-center-10003" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="common-domain" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="common-domain" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="service-order-11001" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="service-order-11001" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="service-warehouse-13001" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="220" />
-    <option name="y" value="275" />
+    <option name="x" value="90" />
+    <option name="y" value="-8" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <flattenPackages ProjectPane="false" />
+      <showMembers ProjectPane="true" />
+      <hideEmptyPackages ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -123,6 +359,169 @@
               <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
               <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="warehouse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="xywei" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="xywei" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="xywei" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="TestPayment" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="service-payment-12001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="service-warehouse-13001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="service-warehouse-13001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="service-warehouse-13001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="service-warehouse-13001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="service-warehouse-13001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="service-warehouse-13001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="xywei" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
+              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
+              <item name="service-warehouse-13001" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="xywei" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -130,13 +529,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1614326058329" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1614929039254" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/register-center-10002/src/main/resources/application.yml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -144,11 +544,26 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27173913" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Other File Types" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\workspace_idea_2019\order-payment-warehouse" />
+      <recent name="E:\workspace_idea_2019\order-payment-warehouse\service-warehouse-13001\src\main\java\com\xywei\springcloud\warehouse" />
+      <recent name="E:\workspace_idea_2019\order-payment-warehouse\service-warehouse-13001\src\main\resources\mybatis\mapper" />
+      <recent name="E:\workspace_idea_2019\order-payment-warehouse\service-payment-12001\src\main\resources\mybatis\mapper" />
+      <recent name="E:\workspace_idea_2019\order-payment-warehouse\service-order-11001\src\main\resources\mybatis\mapper" />
+      <recent name="E:\workspace_idea_2019\order-payment-warehouse\service-order-11001\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xywei.springcloud.service.warehouse" />
+      <recent name="com.xywei.springcloud.warehouse.controller" />
+      <recent name="com.xywei.springcloud.warehouse.dao" />
+      <recent name="com.xywei.springcloud.dao" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\workspace_idea_2019\order-payment-warehouse\service-order-11001\src\main\resources\templates\order" />
+      <recent name="E:\workspace_idea_2019\order-payment-warehouse\service-order-11001\src\main\resources\static\js" />
+      <recent name="E:\workspace_idea_2019\order-payment-warehouse\service-order-11001\src\main\resources\mybatis" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -167,14 +582,80 @@
         </RuleState>
       </list>
     </option>
-    <option name="contentProportion" value="0.16612554" />
+    <option name="contentProportion" value="0.19480519" />
   </component>
-  <component name="RunManager" selected="Spring Boot.Register10002">
+  <component name="RunManager" selected="JUnit.TestPayment.test2">
+    <configuration name="TestPayment.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service-order-11001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xywei.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xywei.test" />
+      <option name="MAIN_CLASS_NAME" value="com.xywei.test.TestPayment" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPayment.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service-order-11001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xywei.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xywei.test" />
+      <option name="MAIN_CLASS_NAME" value="com.xywei.test.TestPayment" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderApplication11001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service-order-11001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xywei.springcloud.payment.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xywei.springcloud.OrderApplication11001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderApplication11002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-order-11002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xywei.springcloud.OrderApplication11002" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderApplication11003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-order-11003" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xywei.springcloud.OrderApplication11003" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentApplication12001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-payment-12001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xywei.springcloud.PaymentApplication12001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Register10001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="register-center-10001" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xywei.springcloud.*" />
+          <option name="PATTERN" value="com.xywei.springcloud.payment.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -197,9 +678,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WarehouseApplication13001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service-warehouse-13001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xywei.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xywei.springcloud.WarehouseApplication13001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.TestPayment.test1" />
+      <item itemvalue="JUnit.TestPayment.test2" />
+      <item itemvalue="Spring Boot.Register10003" />
+      <item itemvalue="Spring Boot.Register10002" />
+      <item itemvalue="Spring Boot.PaymentApplication12001" />
+      <item itemvalue="Spring Boot.OrderApplication11003" />
+      <item itemvalue="Spring Boot.OrderApplication11002" />
+      <item itemvalue="Spring Boot.Register10001" />
+      <item itemvalue="Spring Boot.OrderApplication11001" />
+      <item itemvalue="Spring Boot.WarehouseApplication13001" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.WarehouseApplication13001" />
+        <item itemvalue="Spring Boot.OrderApplication11001" />
         <item itemvalue="Spring Boot.Register10001" />
+        <item itemvalue="JUnit.TestPayment.test2" />
+        <item itemvalue="JUnit.TestPayment.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +724,15 @@
       <option name="presentableId" value="Default" />
       <updated>1614223609113</updated>
       <workItem from="1614223613641" duration="4605000" />
-      <workItem from="1614309681516" duration="13000000" />
+      <workItem from="1614309681516" duration="22512000" />
+      <workItem from="1614351867072" duration="3296000" />
+      <workItem from="1614393072149" duration="14140000" />
+      <workItem from="1614433245155" duration="7757000" />
+      <workItem from="1614502721740" duration="2337000" />
+      <workItem from="1614506346635" duration="3585000" />
+      <workItem from="1614522171366" duration="5256000" />
+      <workItem from="1614568425432" duration="15293000" />
+      <workItem from="1614920630115" duration="8279000" />
     </task>
     <task id="LOCAL-00001" summary="初始化工程">
       <created>1614312133947</created>
@@ -233,27 +751,57 @@
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestPayment_test2 - 2021.03.01 at 14h 56m 12s.xml">
+      <configuration name="TestPayment.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPayment_test2 - 2021.03.01 at 14h 57m 53s.xml">
+      <configuration name="TestPayment.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPayment_test2 - 2021.03.01 at 14h 58m 54s.xml">
+      <configuration name="TestPayment.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPayment_test2 - 2021.03.01 at 15h 01m 03s.xml">
+      <configuration name="TestPayment.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPayment_test2 - 2021.03.01 at 15h 04m 31s.xml">
+      <configuration name="TestPayment.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPayment_test2 - 2021.03.01 at 15h 06m 45s.xml">
+      <configuration name="TestPayment.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPayment_test2 - 2021.03.01 at 15h 07m 45s.xml">
+      <configuration name="TestPayment.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPayment_test2 - 2021.03.01 at 15h 09m 09s.xml">
+      <configuration name="TestPayment.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPayment_test2 - 2021.03.01 at 15h 18m 24s.xml">
+      <configuration name="TestPayment.test2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestPayment_test2 - 2021.03.01 at 15h 19m 03s.xml">
+      <configuration name="TestPayment.test2" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17605000" />
+    <option name="totallyTimeSpent" value="87060000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1663113" />
+      <window_info content_ui="combo" x="31" y="88" width="418" height="618" id="Project" order="0" visible="true" weight="0.2228145" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Run Dashboard" weight="0.329718" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Java Enterprise" weight="0.329718" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -261,14 +809,18 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.329718" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.329718" />
-      <window_info anchor="right" id="Bean Validation" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.3449024" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Spring" order="13" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.329718" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49946696" weight="0.34815618" />
+      <window_info anchor="bottom" id="Problems" order="16" weight="0.329718" />
+      <window_info anchor="right" id="Bean Validation" order="0" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.21748401" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.31130064" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
@@ -281,299 +833,430 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化工程" />
     <MESSAGE value="添加说明架构图" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加说明架构图" />
+    <MESSAGE value="重构代码，跑通order-payment-warehouse，未完成集群" />
+    <option name="LAST_COMMIT_MESSAGE" value="重构代码，跑通order-payment-warehouse，未完成集群" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/service-order-11002/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-order-11003/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-order-11001/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-payment-12001/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/org/apache/tomcat/embed/tomcat-embed-core/9.0.29/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/authenticator/AuthenticatorBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        <state relative-caret-position="192">
+          <caret line="526" selection-start-line="526" selection-end-line="526" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/org/apache/tomcat/embed/tomcat-embed-core/9.0.29/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/core/StandardHostValve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="191" selection-start-line="191" selection-end-line="191" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/org/apache/tomcat/embed/tomcat-embed-core/9.0.29/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/core/StandardEngineValve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/org/apache/tomcat/embed/tomcat-embed-core/9.0.29/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/connector/CoyoteAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="426" selection-start-line="426" selection-end-line="426" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/org/apache/tomcat/embed/tomcat-embed-core/9.0.29/tomcat-embed-core-9.0.29-sources.jar!/org/apache/coyote/http11/Http11Processor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="457" selection-start-line="457" selection-end-line="457" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/org/apache/tomcat/embed/tomcat-embed-core/9.0.29/tomcat-embed-core-9.0.29-sources.jar!/org/apache/coyote/AbstractProcessorLight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/org/apache/tomcat/embed/tomcat-embed-core/9.0.29/tomcat-embed-core-9.0.29-sources.jar!/org/apache/coyote/AbstractProtocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="985" selection-start-line="985" selection-end-line="985" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/org/apache/tomcat/embed/tomcat-embed-core/9.0.29/tomcat-embed-core-9.0.29-sources.jar!/org/apache/tomcat/util/net/NioEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="1618" selection-start-line="1618" selection-end-line="1618" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/org/apache/tomcat/embed/tomcat-embed-core/9.0.29/tomcat-embed-core-9.0.29-sources.jar!/org/apache/tomcat/util/net/SocketProcessorBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/org/apache/tomcat/embed/tomcat-embed-core/9.0.29/tomcat-embed-core-9.0.29-sources.jar!/org/apache/catalina/valves/ErrorReportValve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service-payment-12002/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-payment-12003/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-warehouse-13001/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-warehouse-13002/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-warehouse-13003/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway-9001/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gateway-9003/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/org/apache/tomcat/embed/tomcat-embed-core/9.0.29/tomcat-embed-core-9.0.29-sources.jar!/org/apache/tomcat/util/threads/TaskThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="214">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gateway-9002/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/order/Order.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/org/springframework/spring-web/5.2.2.RELEASE/spring-web-5.2.2.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="183">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/org/springframework/spring-webmvc/5.2.2.RELEASE/spring-webmvc-5.2.2.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/org/springframework/spring-webmvc/5.2.2.RELEASE/spring-webmvc-5.2.2.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="804" selection-start-line="804" selection-end-line="804" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/org/springframework/spring-webmvc/5.2.2.RELEASE/spring-webmvc-5.2.2.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/org/springframework/spring-webmvc/5.2.2.RELEASE/spring-webmvc-5.2.2.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="1041" selection-start-line="1041" selection-end-line="1041" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-payment-12001/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/OrderApplication11001.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1112#1113#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
-            <element signature="e#1174#1175#0" expanded="true" />
-            <element signature="e#1202#1203#0" expanded="true" />
-            <element signature="e#1243#1244#0" expanded="true" />
-            <element signature="e#1276#1277#0" expanded="true" />
-            <element signature="e#1332#1333#0" expanded="true" />
-            <element signature="e#1376#1377#0" expanded="true" />
-            <element signature="e#1410#1411#0" expanded="true" />
-            <element signature="e#1439#1440#0" expanded="true" />
-            <element signature="e#1484#1485#0" expanded="true" />
-            <element signature="e#1520#1521#0" expanded="true" />
-            <element signature="e#1555#1556#0" expanded="true" />
-            <element signature="e#1588#1589#0" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-            <element signature="e#1682#1683#0" expanded="true" />
-            <element signature="e#1717#1718#0" expanded="true" />
-            <element signature="e#1750#1751#0" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
-            <element signature="e#1844#1845#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/org/springframework/spring-test/5.2.2.RELEASE/spring-test-5.2.2.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunBeforeTestExecutionCallbacks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/org/springframework/spring-test/5.2.2.RELEASE/spring-test-5.2.2.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunAfterTestExecutionCallbacks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/org/springframework/spring-test/5.2.2.RELEASE/spring-test-5.2.2.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunBeforeTestMethodCallbacks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#1464#1658#0" expanded="true" />
+            <element signature="e#1657#1658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/statements/InvokeMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/maven339_idea/io/github/openfeign/feign-core/10.4.0/feign-core-10.4.0-sources.jar!/feign/ReflectiveFeign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+          <folding>
+            <element signature="e#7725#7741#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/order/OrderDetail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="-85">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
           <folding>
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#910#911#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#987#988#0" expanded="true" />
-            <element signature="e#1025#1026#0" expanded="true" />
-            <element signature="e#1060#1061#0" expanded="true" />
-            <element signature="e#1090#1091#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
-            <element signature="e#1175#1176#0" expanded="true" />
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1243#1244#0" expanded="true" />
-            <element signature="e#1293#1294#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-            <element signature="e#1379#1380#0" expanded="true" />
-            <element signature="e#1418#1419#0" expanded="true" />
-            <element signature="e#1483#1484#0" expanded="true" />
-            <element signature="e#1539#1540#0" expanded="true" />
-            <element signature="e#1585#1586#0" expanded="true" />
-            <element signature="e#1623#1624#0" expanded="true" />
-            <element signature="e#1689#1690#0" expanded="true" />
-            <element signature="e#1743#1744#0" expanded="true" />
+            <element signature="e#1487#1488#0" expanded="true" />
+            <element signature="e#1543#1544#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/warehouse/Goods.java">
+    <entry file="file://$PROJECT_DIR$/common-domain/src/main/java/com/xywei/constant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding>
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#870#871#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-            <element signature="e#935#936#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="e#1053#1054#0" expanded="true" />
-            <element signature="e#1095#1096#0" expanded="true" />
-            <element signature="e#1133#1134#0" expanded="true" />
-            <element signature="e#1167#1168#0" expanded="true" />
-            <element signature="e#1221#1222#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-            <element signature="e#1310#1311#0" expanded="true" />
-            <element signature="e#1349#1350#0" expanded="true" />
-            <element signature="e#1413#1414#0" expanded="true" />
-            <element signature="e#1469#1470#0" expanded="true" />
-            <element signature="e#1506#1507#0" expanded="true" />
-            <element signature="e#1539#1540#0" expanded="true" />
-            <element signature="e#1591#1592#0" expanded="true" />
-            <element signature="e#1635#1636#0" expanded="true" />
-            <element signature="e#1670#1671#0" expanded="true" />
-            <element signature="e#1703#1704#0" expanded="true" />
-            <element signature="e#1753#1754#0" expanded="true" />
-            <element signature="e#1797#1798#0" expanded="true" />
-            <element signature="e#1832#1833#0" expanded="true" />
-            <element signature="e#1865#1866#0" expanded="true" />
-            <element signature="e#1915#1916#0" expanded="true" />
-            <element signature="e#1959#1960#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="161">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/order/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="90" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/payment/Payment.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#865#866#0" expanded="true" />
+            <element signature="e#898#899#0" expanded="true" />
+            <element signature="e#954#955#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+            <element signature="e#1160#1161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-payment-12001/src/main/java/com/xywei/springcloud/payment/service/impl/PaymentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-payment-12001/src/main/java/com/xywei/springcloud/payment/dao/PaymentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-payment-12001/src/main/resources/mybatis/mapper/payment-mapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <element signature="e#533#534#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-            <element signature="e#917#918#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
-          </folding>
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-cloud-order-payment-warehouse.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common-domain/pom.xml">
+    <entry file="file://$PROJECT_DIR$/service-payment-12001/src/test/java/com/xywei/springcloud/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="43" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="43" />
+        <state relative-caret-position="306">
+          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/constant/CommonConstant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276">
-          <caret line="6" selection-end-line="112" />
+        <state relative-caret-position="253">
+          <caret line="47" column="89" selection-start-line="47" selection-start-column="89" selection-end-line="47" selection-end-column="89" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/register-center-10002/src/main/java/com/xywei/springcloud/App.java">
+    <entry file="file://$PROJECT_DIR$/service-payment-12001/src/main/java/com/xywei/springcloud/payment/controller/PaymentComtroller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register-center-10002/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register-center-10003/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register-center-10003/src/main/java/com/xywei/springcloud/Register10003.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register-center-10002/src/test/java/com/xywei/springcloud/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="45">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/register-center-10002/src/main/java/com/xywei/springcloud/Register10002.java">
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/order/impl/OrderServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="91">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/order/OrderDetailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/order/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/register-center-10002/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/openfeign/payment/OpenFeignPaymentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/openfeign/warehouse/OpenFeignWareHouseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/payment/PaymentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/warehouse/WareHouseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/warehouse/impl/WareHouseServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register-center-10003/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register-center-10001/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register-center-10001/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="11" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register-center-10001/src/main/java/com/xywei/springcloud/Register10001.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="4" column="74" lean-forward="true" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
+          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-184">
-            <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/payment/impl/PaymentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/WareHouseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-warehouse-13001/src/main/java/com/xywei/springcloud/warehouse/controller/WareHouseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/PaymentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/resources/templates/warehouse/orderstatus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/test/java/com/xywei/test/TestPayment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -629,11 +1312,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|register-center-10002</last-edited>
+          <last-edited>service-order-11003</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.27173913" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

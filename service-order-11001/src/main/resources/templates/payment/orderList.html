@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>订单详细</title>
+</head>
+<body>
+<h1>订单详细</h1>
+<div align="center">
+    <table>
+        <thead>
+        <tr>
+            <td>商品名字</td>
+            <td>商品总数量</td>
+            <td>总价格</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td th:text="${orderDetail.goodsName}">${orderDetail.goodsName}</td>
+            <td th:text="${orderDetail.goodsTotalNumber}">${orderDetail.goodsTotalNumber}</td>
+            <td th:text="${orderDetail.goodsTotalPrice}">${orderDetail.goodsTotalPrice}</td>
+        </tr>
+        </tbody>
+    </table>
+    <a th:href="@{/payment(orderId=${orderDetail.orderId},goodsTotalPrice=${orderDetail.goodsTotalPrice},goodsId=${orderDetail.goodsId},goodsTotalNumber=${orderDetail.getGoodsTotalNumber()})}">点击完成支付</a>
+    <!--<a th:href="@{/payment(orderDetail=${orderDetail})}" >点击完成支付</a>-->
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+server:
+  port: 11003
+
+spring:
+  application:
+    name: service-order
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://localhost:3309/springcloud-order?characterEncoding=utf-8&useUnicode=true&useSSL=false
+    username: root
+    password: Root123;
+mybatis:
+  mapper-locations: classpath:mybatis/mybatis/*-mybatis.xml
+  type-aliases-package: com.xywei.domain
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}-${server.port}
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka10001.com:10001/eureka,http://eureka10002.com:10002/eureka,http://eureka10003.com:10003/eureka

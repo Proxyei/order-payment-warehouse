@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="/js/jquery-3.4.1.js"></script>
+    <script>
+        $(function () {
+            var price = (($("#goods_number").val() * 10 * $("#goods_price").val() * 10) / 100);
+            $("#goods_total_price").val(price);
+        });
+    </script>
+</head>
+<body>
+<h1>主页order</h1>
+<div align="center">
+    <form action="/order/create" method="post">
+        <table>
+            <thead>
+            <tr>
+                <th>
+                    商品编号
+                </th>
+                <th>
+                    商品名字
+                </th>
+                <th>
+                    商品单价(￥)
+                </th>
+                <th>
+                    选择数量
+                </th>
+                <th>
+                    总价格(￥)
+                </th>
+            </tr>
+            </thead>
+            <tr>
+                <td>
+                    <input type="text" name="id" value="1" readonly>
+                </td>                <td>
+                    <input type="text" name="goodsName" value="飘柔" readonly>
+                </td>
+                <td >
+                    <input type="text" name="goodsPrice" id="goods_price" value="9.8" readonly>
+                </td>
+                <td >
+                    <input type="text" name="goodsNumber" id="goods_number" value="3" readonly>
+                </td>
+                <td>
+                    <input type="text" name="goodsTotalPrice" id="goods_total_price" value="" readonly>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="下单">
+    </form>
+</div>
+
+</body>
+</html>

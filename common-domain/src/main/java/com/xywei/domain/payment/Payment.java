@@ -1,5 +1,6 @@
 package com.xywei.domain.payment;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 /**
@@ -10,21 +11,16 @@ import java.util.Date;
 public class Payment {
     private Integer id;
     private Integer orderId;
-    /**
-     * @Description '支付状态，2000-取消，2001-支付中，2002-支付完成',
-     * @Author future
-     * @DateTime 2021/2/26 11:54
-     **/
-    private Integer status;
+    private BigDecimal totalPrice;
     private Date createTime;
 
     public Payment() {
     }
 
-    public Payment(Integer id, Integer orderId, Integer status, Date createTime) {
+    public Payment(Integer id, Integer orderId, BigDecimal totalPrice, Date createTime) {
         this.id = id;
         this.orderId = orderId;
-        this.status = status;
+        this.totalPrice = totalPrice;
         this.createTime = createTime;
     }
 
@@ -44,12 +40,12 @@ public class Payment {
         this.orderId = orderId;
     }
 
-    public Integer getStatus() {
-        return status;
+    public BigDecimal getTotalPrice() {
+        return totalPrice;
     }
 
-    public void setStatus(Integer status) {
-        this.status = status;
+    public void setTotalPrice(BigDecimal totalPrice) {
+        this.totalPrice = totalPrice;
     }
 
     public Date getCreateTime() {
@@ -65,7 +61,7 @@ public class Payment {
         return "Payment{" +
                 "id=" + id +
                 ", orderId=" + orderId +
-                ", status=" + status +
+                ", totalPrice=" + totalPrice +
                 ", createTime=" + createTime +
                 '}';
     }
