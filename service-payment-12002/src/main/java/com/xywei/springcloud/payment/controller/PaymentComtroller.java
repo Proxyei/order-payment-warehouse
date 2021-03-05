@@ -3,6 +3,7 @@ package com.xywei.springcloud.payment.controller;
 import com.xywei.domain.payment.Payment;
 import com.xywei.springcloud.payment.service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,6 +20,9 @@ import java.util.Date;
 @RestController
 public class PaymentComtroller {
 
+    @Value("${server.port}")
+    private int serverPort;
+
     @Autowired
     private PaymentService paymentService;
 
@@ -28,6 +32,7 @@ public class PaymentComtroller {
         Payment payment=new Payment();
         payment.setOrderId(orderId);
         payment.setTotalPrice(goodsTotalPrice);
+        payment.setPort(serverPort);
         System.out.println("payment=="+payment);
         paymentService.payForOrder(payment);
 

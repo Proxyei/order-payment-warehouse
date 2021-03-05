@@ -30,3 +30,15 @@ info:
   app.name: ${spring.application.name}
   build.artifactId: $project.artifactId$
   build.version: $project.version$
+
+####openfeign负载均衡不同微服务不同的算法####
+# 支付模块：随机调用
+SERVICE-PAYMENT:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+# 仓库模块：调用5次才调用下一台机器
+SERVICE-WAREHOUSE:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.xywei.ribbon.CustomRule
+#com.xywei.ribbon.CustomWarehouseRule

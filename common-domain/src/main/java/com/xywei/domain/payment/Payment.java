@@ -13,6 +13,12 @@ public class Payment {
     private Integer orderId;
     private BigDecimal totalPrice;
     private Date createTime;
+    /**
+     * @Description 单纯测试
+     * @Author future
+     * @DateTime 2021/3/5 17:33
+     **/
+    private int port;
 
     public Payment() {
     }
@@ -54,6 +60,14 @@ public class Payment {
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
+    }
+
+    public int getPort() {
+        return port;
+    }
+
+    public void setPort(int port) {
+        this.port = port;
     }
 
     @Override

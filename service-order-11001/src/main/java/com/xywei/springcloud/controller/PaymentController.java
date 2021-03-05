@@ -9,6 +9,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.util.Date;
+
 /**
  * @Author future
  * @DateTime 2021/2/27 22:02
@@ -28,8 +30,8 @@ public class PaymentController {
 
         String msg = paymentService.payForOrder(orderDetail);
 
-        if (msg != null && "ok".equals(msg)) {
-            msg = "下单成功！";
+        if (msg != null && msg.contains("ok") ) {
+            msg = new Date()+ "下单成功！"+msg;
         }
 
         model.addAttribute("msg", msg);

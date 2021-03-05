@@ -25,7 +25,7 @@ public class PaymentServiceImpl implements PaymentService {
     @Override
     public String payForOrder(OrderDetail orderDetail) {
         String msg = null;
-
+        StringBuffer sb=new StringBuffer();
         //调用支付系统，如果支付系统OK，就调用仓库系统
         Payment payment = new Payment();
         payment.setOrderId(orderDetail.getOrderId());
@@ -40,6 +40,11 @@ public class PaymentServiceImpl implements PaymentService {
             msg = openFeignWareHouseService.updateWareHouseGoodsNumber(orderDetail.getGoodsId(), orderDetail.getGoodsTotalNumber());
         }
 
-        return msg;
+        sb.append("payment调用：");
+        sb.append(pay.getPort());
+        sb.append(", warehouse调用：");
+        sb.append(msg);
+
+        return sb.toString();
     }
 }
