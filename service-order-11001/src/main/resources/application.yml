@@ -42,3 +42,8 @@ SERVICE-WAREHOUSE:
   ribbon:
     NFLoadBalancerRuleClassName: com.xywei.ribbon.CustomRule
 #com.xywei.ribbon.CustomWarehouseRule
+
+###hystrix服务降级、熔断###
+feign:
+  hystrix:
+    enabled: true

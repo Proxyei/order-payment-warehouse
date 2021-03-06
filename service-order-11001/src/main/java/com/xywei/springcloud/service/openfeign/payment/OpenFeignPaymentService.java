@@ -13,8 +13,7 @@ import java.math.BigDecimal;
  * @DateTime 2021/2/28 22:30
  * @Description
  */
-@Component(value = "openFeignPaymentService")
-@FeignClient(value = "SERVICE-PAYMENT")
+@FeignClient(value = "SERVICE-PAYMENT",fallback = OpenFeignPaymentServiceFallback.class)
 public interface OpenFeignPaymentService {
 
     //TODO 这里卡住很久，传递对象的时候问题很大！,但是后面下又能用了，真神了！
