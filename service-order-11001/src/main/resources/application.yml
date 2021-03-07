@@ -40,10 +40,25 @@ SERVICE-PAYMENT:
 # 仓库模块：调用5次才调用下一台机器
 SERVICE-WAREHOUSE:
   ribbon:
-    NFLoadBalancerRuleClassName: com.xywei.ribbon.CustomRule
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+    #com.xywei.ribbon.CustomRule
 #com.xywei.ribbon.CustomWarehouseRule
 
 ###hystrix服务降级、熔断###
 feign:
   hystrix:
     enabled: true
+##服务熔断
+hystrix:
+  command:
+    default:
+      circuitBreaker:
+        #打开熔断器功能
+        enabled: true
+        #时间窗口，统计请求和异常次数
+        sleepWindowInMilliseconds: 60000
+        #在时间窗口内要达到最少的访问次数，如果达不到，即使所以请求都出现异常，也不会出现熔断
+        requestVolumeThreshold: 10
+        #请求异常比例
+        errorThresholdPercentage: 50
+        #综上表示：如果在一分钟内，达到10次访问，并且有50%*10=5次的访问是异常，就进行熔断，如果一分钟内达不到10次访问，那么也不会熔断

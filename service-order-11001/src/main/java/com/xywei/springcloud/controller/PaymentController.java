@@ -29,11 +29,6 @@ public class PaymentController {
     public String payForOrder(OrderDetail orderDetail, Model model) {
 
         String msg = paymentService.payForOrder(orderDetail);
-
-        if (msg != null && msg.contains("ok") ) {
-            msg = new Date()+ "下单成功！"+msg;
-        }
-
         model.addAttribute("msg", msg);
 
         return "/warehouse/orderstatus";
