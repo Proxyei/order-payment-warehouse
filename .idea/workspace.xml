@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a1517e7-f4d2-4572-9816-5d9f78ee7878" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gateway-9001/src/main/java/com/xywei/springcloud/GateWayApplication9001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-9001/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register-center-10001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/register-center-10001/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/payment/impl/PaymentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/payment/impl/PaymentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-order-11001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-order-11001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway-9001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-9001/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,11 +50,11 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/PaymentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
+            <state relative-caret-position="345">
               <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -65,22 +64,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/payment/impl/PaymentServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/WareHouseController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="71">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/register-center-10001/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/gateway-9001/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            <state relative-caret-position="184">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="11" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -88,82 +84,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="834">
-              <caret line="63" column="77" selection-start-line="63" selection-start-column="77" selection-end-line="63" selection-end-column="77" />
+            <state relative-caret-position="92">
+              <caret line="4" column="23" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-order-11001/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="40" column="57" lean-forward="true" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/openfeign/warehouse/OpenFeignWareHouseService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/openfeign/warehouse/OpenFeignWareHouseServiceFallback.java">
+        <entry file="file://$PROJECT_DIR$/gateway-9001/src/main/java/com/xywei/springcloud/GateWayApplication9001.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="201">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-              <folding>
-                <element signature="e#576#577#0" expanded="true" />
-                <element signature="e#607#608#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/order/OrderDetail.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
-              <folding>
-                <element signature="e#914#915#0" expanded="true" />
-                <element signature="e#944#945#0" expanded="true" />
-                <element signature="e#1064#1065#0" expanded="true" />
-                <element signature="e#1094#1095#0" expanded="true" />
-                <element signature="e#1422#1423#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/openfeign/payment/OpenFeignPaymentServiceFallback.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#579#580#0" expanded="true" />
-                <element signature="e#615#616#0" expanded="true" />
-                <element signature="e#686#687#0" expanded="true" />
-                <element signature="e#722#723#0" expanded="true" />
-                <element signature="e#790#791#0" expanded="true" />
-                <element signature="e#826#827#0" expanded="true" />
+                <element signature="e#235#236#0" expanded="true" />
+                <element signature="e#267#268#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/openfeign/payment/OpenFeignPaymentService.java">
+        <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+            <state relative-caret-position="230">
+              <caret line="36" column="31" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -185,9 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/service-payment-12001/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/common-domain/src/main/java/com/xywei/constant.java" />
-        <option value="$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/constant/CommonConstant.java" />
         <option value="$PROJECT_DIR$/service-payment-12001/src/main/resources/mybatis/mapper/payment-mapper.xml" />
         <option value="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/OrderService.java" />
         <option value="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/OrderController.java" />
@@ -236,6 +181,9 @@
         <option value="$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/payment/impl/PaymentServiceImpl.java" />
         <option value="$PROJECT_DIR$/register-center-10001/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/service-order-11001/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/gateway-9001/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway-9001/src/main/java/com/xywei/springcloud/GateWayApplication9001.java" />
+        <option value="$PROJECT_DIR$/gateway-9001/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -252,12 +200,7 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="common-domain" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="common-domain" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+          <item name="gateway-9001" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
@@ -289,547 +232,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="common-domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="common-domain" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="common-domain" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="common-domain" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="common-domain" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="common-domain" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="common-domain" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="common-domain" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="common-domain" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="payment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="common-domain" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="result" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="register-center-10001" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="register-center-10001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="register-center-10001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="register-center-10001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="register-center-10001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="register-center-10001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="register-center-10001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="register-center-10001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-              <item name="ribbon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="openfeign" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="openfeign" type="462c0819:PsiDirectoryNode" />
-              <item name="payment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="openfeign" type="462c0819:PsiDirectoryNode" />
-              <item name="warehouse" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="payment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="payment" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-order-11001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-payment-12001" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-payment-12001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-payment-12001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-payment-12001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-payment-12001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-payment-12001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-payment-12001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-payment-12001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="payment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-payment-12001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="payment" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-payment-12001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="payment" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-payment-12003" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-payment-12003" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-payment-12003" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-payment-12003" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-payment-12003" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-payment-12003" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-payment-12003" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-warehouse-13001" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-warehouse-13001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-warehouse-13001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-warehouse-13001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-warehouse-13001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-warehouse-13001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="order-payment-warehouse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-payment-warehouse" type="462c0819:PsiDirectoryNode" />
-              <item name="service-warehouse-13001" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xywei" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -841,7 +245,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1615111356081" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1615196806294" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/register-center-10002/src/main/resources/application.yml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -890,7 +294,20 @@
     </option>
     <option name="contentProportion" value="0.19480519" />
   </component>
-  <component name="RunManager" selected="Spring Boot.WarehouseApplication13001">
+  <component name="RunManager" selected="Spring Boot.GateWayApplication9001">
+    <configuration name="GateWayApplication9001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gateway-9001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xywei.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xywei.springcloud.GateWayApplication9001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderApplication11001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="service-order-11001" />
       <extension name="coverage">
@@ -921,19 +338,6 @@
     <configuration name="PaymentApplication12001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service-payment-12001" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.xywei.springcloud.PaymentApplication12001" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PaymentApplication12003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="service-payment-12003" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xywei.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xywei.springcloud.PaymentApplication12003" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -999,17 +403,17 @@
       <item itemvalue="Spring Boot.OrderApplication11002" />
       <item itemvalue="Spring Boot.OrderApplication11001" />
       <item itemvalue="Spring Boot.WarehouseApplication13002" />
-      <item itemvalue="Spring Boot.PaymentApplication12003" />
       <item itemvalue="Spring Boot.Register10001" />
       <item itemvalue="Spring Boot.WarehouseApplication13001" />
+      <item itemvalue="Spring Boot.GateWayApplication9001" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.WarehouseApplication13001" />
-        <item itemvalue="Spring Boot.Register10001" />
+        <item itemvalue="Spring Boot.GateWayApplication9001" />
         <item itemvalue="Spring Boot.OrderApplication11001" />
+        <item itemvalue="Spring Boot.Register10001" />
+        <item itemvalue="Spring Boot.WarehouseApplication13001" />
         <item itemvalue="Spring Boot.WarehouseApplication13002" />
-        <item itemvalue="Spring Boot.PaymentApplication12003" />
       </list>
     </recent_temporary>
   </component>
@@ -1035,7 +439,8 @@
       <workItem from="1614920630115" duration="18462000" />
       <workItem from="1615016905005" duration="4094000" />
       <workItem from="1615041008805" duration="2738000" />
-      <workItem from="1615101001896" duration="9866000" />
+      <workItem from="1615101001896" duration="10052000" />
+      <workItem from="1615188325394" duration="7399000" />
     </task>
     <task id="LOCAL-00001" summary="初始化工程">
       <created>1614312133947</created>
@@ -1079,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615046640317</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="添加hystrix服务熔断">
+      <created>1615111487081</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615111487081</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1115,12 +527,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113941000" />
+    <option name="totallyTimeSpent" value="121526000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" x="31" y="88" width="418" height="618" id="Project" order="0" visible="true" weight="0.26027396" />
+      <window_info active="true" content_ui="combo" x="31" y="88" width="418" height="618" id="Project" order="0" visible="true" weight="0.2597471" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1143,7 +556,7 @@
       <window_info anchor="bottom" id="Messages" order="12" weight="0.329718" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49894625" visible="true" weight="0.29067245" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49894625" visible="true" weight="0.29067245" />
       <window_info anchor="bottom" id="Problems" order="16" weight="0.329718" />
       <window_info anchor="bottom" id="Maven" order="17" weight="0.29501083" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1177,40 +590,26 @@
     <MESSAGE value="添加payment/warehouse集群" />
     <MESSAGE value="添加ribbon访问不同微服务对应不同负载均衡算法，自定义算法有待完善" />
     <MESSAGE value="添加hystrix服务降级" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加hystrix服务降级" />
+    <MESSAGE value="添加hystrix服务熔断" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加hystrix服务熔断" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/OrderController.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/service-payment-12002/src/main/resources/mybatis/mapper/payment-mapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-payment-12003/src/main/resources/mybatis/mapper/payment-mapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-payment-12002/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-payment-12003/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-warehouse-13001/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="58" column="19" selection-start-line="12" selection-start-column="4" selection-end-line="58" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service-warehouse-13002/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="505">
@@ -1285,16 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="27" column="22" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1449,27 +838,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-payment-12001/src/main/java/com/xywei/springcloud/payment/controller/PaymentComtroller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/result/ResultVO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="26" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/openfeign/payment/OpenFeignPaymentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1480,9 +852,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/payment/impl/PaymentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-order-11001/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/openfeign/warehouse/OpenFeignWareHouseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/openfeign/warehouse/OpenFeignWareHouseServiceFallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/order/OrderDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1081">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="e#914#915#0" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#1064#1065#0" expanded="true" />
+            <element signature="e#1094#1095#0" expanded="true" />
+            <element signature="e#1422#1423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/openfeign/payment/OpenFeignPaymentServiceFallback.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
+        <state relative-caret-position="299">
           <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1496,42 +917,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/openfeign/warehouse/OpenFeignWareHouseServiceFallback.java">
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/openfeign/payment/OpenFeignPaymentService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding>
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/openfeign/warehouse/OpenFeignWareHouseService.java">
+    <entry file="file://$PROJECT_DIR$/register-center-10001/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        <state relative-caret-position="23">
+          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common-domain/src/main/java/com/xywei/domain/order/OrderDetail.java">
+    <entry file="file://$PROJECT_DIR$/register-center-10001/src/main/java/com/xywei/springcloud/Register10001.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
-            <element signature="e#1094#1095#0" expanded="true" />
-            <element signature="e#1422#1423#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="140">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/service/payment/impl/PaymentServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/service-payment-12001/src/main/java/com/xywei/springcloud/payment/controller/PaymentComtroller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="68">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1540,7 +950,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/PaymentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
+        <state relative-caret-position="345">
           <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1548,24 +958,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-order-11001/pom.xml">
+    <entry file="file://$PROJECT_DIR$/gateway-9001/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="40" column="57" lean-forward="true" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
+        <state relative-caret-position="276">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/WareHouseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-9001/src/main/java/com/xywei/springcloud/GateWayApplication9001.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="834">
-          <caret line="63" column="77" selection-start-line="63" selection-start-column="77" selection-end-line="63" selection-end-column="77" />
+        <state relative-caret-position="92">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/register-center-10001/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/service-order-11001/src/main/java/com/xywei/springcloud/controller/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        <state relative-caret-position="230">
+          <caret line="36" column="31" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gateway-9001/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="11" selection-end-column="24" />
         </state>
       </provider>
     </entry>

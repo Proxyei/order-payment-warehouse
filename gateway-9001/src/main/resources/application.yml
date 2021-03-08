@@ -1,0 +1,29 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: service-gateway
+  cloud:
+    gateway:
+#      discovery:
+#        locator:
+#          #开启使用微服务名进行导航，[为何不配置也可以]
+#          enabled: true
+      routes:
+        - id: order-router
+          uri: lb://SERVICE-ORDER
+          predicates:
+            - Path=/,/js/**,/payment/**,/order/create/**
+
+
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}-${server.port}
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://eureka10001.com:10001/eureka,http://eureka10002.com:10002/eureka,http://eureka10003.com:10003/eureka
