@@ -14,8 +14,22 @@ spring:
         - id: order-router
           uri: lb://SERVICE-ORDER
           predicates:
-            - Path=/,/js/**,/payment/**,/order/create/**
-
+            - Path=/,/payment/**,/order/create/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: fallback
+                fallbackUri: /fallback
+#          filters:
+#            - StripPrefix=1
+#            - name: Hystrix
+#              args:
+#                name: default
+#                fallbackUri: forward:/defaultfallback # 只有该id下的服务会降级
+        - id: static-resource
+          uri: lb://SERVICE-ORDER
+          predicates:
+            - Path=/js/**
 
 
 eureka:
