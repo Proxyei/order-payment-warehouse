@@ -1,0 +1,49 @@
+server:
+  port: 9101
+#  tomcat:
+#    uri-encoding: utf-8
+
+spring:
+  application:
+    name: config-center
+  http:
+    encoding:
+      enabled: true
+      force: true
+      charset: UTF-8
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          # 必须使用SSL访问
+          uri: https://gitee.com/proxyer161130/springcloud-config.git
+          search-paths: /order-payment-warehouse/dev,/order-payment-warehouse/test
+          timeout: 20
+  security:
+    user:
+      name: user1
+      password: user1
+#spring bus 没有用
+#  rabbitmq:
+#    addresses: 192.168.11.139
+#    port: 5672
+#    username: guest
+#    password: guest
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}-${server.port}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka10001.com:10001/eureka,http://eureka10002.com:10002/eureka/, http://eureka10003.com:10003/eureka/
+
+# actuator使用到的bus刷新端点，客户端不用刷
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "bus-refresh"

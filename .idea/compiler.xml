@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common-domain" />
+        <module name="config-center-9101" />
+        <module name="config-center-9102" />
         <module name="gateway-9001" />
         <module name="gateway-9002" />
         <module name="gateway-9003" />

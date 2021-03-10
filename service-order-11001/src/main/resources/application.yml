@@ -3,62 +3,62 @@ server:
 spring:
   application:
     name: service-order
-  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://localhost:3309/springcloud-order?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: root
-    password: Root123;
-  thymeleaf:
-    cache: false
-mybatis:
-  mapper-locations: classpath:mybatis/mapper/*-mapper.xml
-  type-aliases-package: com.xywei.domain
-
-# Eureka配置
-eureka:
-  instance:
-    instance-id: ${spring.application.name}-${server.port}
-    prefer-ip-address: true
-  client:
-    register-with-eureka: true # 需要把自己注册到Eureka服务器
-    fetch-registry: true #需要抓取已有的注册信息
-    service-url:
-      defaultZone: http://eureka10001.com:10001/eureka,http://eureka10002.com:10002/eureka,http://eureka10003.com:10003/eureka
-# version没有作用
-info:
-  app.name: ${spring.application.name}
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
-
-####openfeign负载均衡不同微服务不同的算法####
-# 支付模块：随机调用
-SERVICE-PAYMENT:
-  ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
-
-# 仓库模块：调用5次才调用下一台机器
-SERVICE-WAREHOUSE:
-  ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
-    #com.xywei.ribbon.CustomRule
-#com.xywei.ribbon.CustomWarehouseRule
-
-###hystrix服务降级、熔断###
-feign:
-  hystrix:
-    enabled: true
-##服务熔断
-hystrix:
-  command:
-    default:
-      circuitBreaker:
-        #打开熔断器功能
-        enabled: true
-        #时间窗口，统计请求和异常次数
-        sleepWindowInMilliseconds: 60000
-        #在时间窗口内要达到最少的访问次数，如果达不到，即使所以请求都出现异常，也不会出现熔断
-        requestVolumeThreshold: 10
-        #请求异常比例
-        errorThresholdPercentage: 50
-        #综上表示：如果在一分钟内，达到10次访问，并且有50%*10=5次的访问是异常，就进行熔断，如果一分钟内达不到10次访问，那么也不会熔断
+#  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    driver-class-name: org.gjt.mm.mysql.Driver
+#    url: jdbc:mysql://localhost:3309/springcloud-order?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#    username: root
+#    password: Root123;
+#  thymeleaf:
+#    cache: false
+#mybatis:
+#  mapper-locations: classpath:mybatis/mapper/*-mapper.xml
+#  type-aliases-package: com.xywei.domain
+#
+## Eureka配置
+#eureka:
+#  instance:
+#    instance-id: ${spring.application.name}-${server.port}
+#    prefer-ip-address: true
+#  client:
+#    register-with-eureka: true # 需要把自己注册到Eureka服务器
+#    fetch-registry: true #需要抓取已有的注册信息
+#    service-url:
+#      defaultZone: http://eureka10001.com:10001/eureka,http://eureka10002.com:10002/eureka,http://eureka10003.com:10003/eureka
+## version没有作用
+#info:
+#  app.name: ${spring.application.name}
+#  build.artifactId: $project.artifactId$
+#  build.version: $project.version$
+#
+#####openfeign负载均衡不同微服务不同的算法####
+## 支付模块：随机调用
+#SERVICE-PAYMENT:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+#
+## 仓库模块：调用5次才调用下一台机器
+#SERVICE-WAREHOUSE:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+#    #com.xywei.ribbon.CustomRule
+##com.xywei.ribbon.CustomWarehouseRule
+#
+####hystrix服务降级、熔断###
+#feign:
+#  hystrix:
+#    enabled: true
+###服务熔断
+#hystrix:
+#  command:
+#    default:
+#      circuitBreaker:
+#        #打开熔断器功能
+#        enabled: true
+#        #时间窗口，统计请求和异常次数
+#        sleepWindowInMilliseconds: 60000
+#        #在时间窗口内要达到最少的访问次数，如果达不到，即使所以请求都出现异常，也不会出现熔断
+#        requestVolumeThreshold: 10
+#        #请求异常比例
+#        errorThresholdPercentage: 50
+#        #综上表示：如果在一分钟内，达到10次访问，并且有50%*10=5次的访问是异常，就进行熔断，如果一分钟内达不到10次访问，那么也不会熔断

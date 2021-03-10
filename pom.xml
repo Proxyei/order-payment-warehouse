@@ -26,6 +26,8 @@
         <module>gateway-9001</module>
         <module>gateway-9002</module>
         <module>gateway-9003</module>
+        <module>config-center-9101</module>
+        <module>config-center-9102</module>
     </modules>
 
     <name>order-payment-warehouse</name>

@@ -1,0 +1,15 @@
+server:
+  port: 9102
+
+spring:
+  application:
+    name: config-center
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}-${server.port}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka10001.com:10001/eureka, http://eureka10002.com:10002/eureka, http://eureka10003.com:10003/eureka

@@ -1,0 +1,42 @@
+spring:
+#  rabbitmq:
+#    addresses: 192.168.11.139
+#    port: 5672
+#    username: guest
+#    password: guest
+  cloud:
+    config:
+      label: master
+      name: application
+      profile: dev
+      #通过服务发现连接配置中心，方便集群，前提要配置注册中心，也可以通过URI指定单机
+      discovery:
+        enabled: true
+        service-id: config-center
+      username: user1
+      password: user1
+#  security:
+#    user:
+#      name: user2
+#      password: user2
+#      uri: http://xxxxx
+eureka:
+  instance:
+    # 使用 ip 代替实例名
+    prefer-ip-address: true
+    # 实例的主机名
+    hostname: ${spring.cloud.client.ip-address}
+    # 实例的 ID 规则
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+#  instance:
+#    prefer-ip-address: true
+#    instance-id: ${spring.application.name}-${server.port}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka10001.com:10001/eureka,http://eureka10002.com:10002/eureka,http://eureka10003.com:10003/eureka
+
+
+test:
+  info: hello, bootstrap!v1
