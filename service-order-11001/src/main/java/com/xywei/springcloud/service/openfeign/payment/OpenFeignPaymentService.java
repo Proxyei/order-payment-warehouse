@@ -2,6 +2,7 @@ package com.xywei.springcloud.service.openfeign.payment;
 
 import com.xywei.domain.order.OrderDetail;
 import com.xywei.domain.payment.Payment;
+import com.xywei.springcloud.config.FeignConfig;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
@@ -13,7 +14,7 @@ import java.math.BigDecimal;
  * @DateTime 2021/2/28 22:30
  * @Description
  */
-@FeignClient(value = "SERVICE-PAYMENT",fallback = OpenFeignPaymentServiceFallback.class)
+@FeignClient(value = "SERVICE-PAYMENT",fallback = OpenFeignPaymentServiceFallback.class,configuration = FeignConfig.class)
 public interface OpenFeignPaymentService {
 
     //TODO 这里卡住很久，传递对象的时候问题很大！,但是后面下又能用了，真神了！

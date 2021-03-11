@@ -1,5 +1,6 @@
 package com.xywei.springcloud.service.openfeign.warehouse;
 
+import com.xywei.springcloud.config.FeignConfig;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @DateTime 2021/2/27 22:27
  * @Description
  */
-@FeignClient(value = "SERVICE-WAREHOUSE",fallback = OpenFeignWareHouseServiceFallback.class)
+@FeignClient(value = "SERVICE-WAREHOUSE",fallback = OpenFeignWareHouseServiceFallback.class, configuration = FeignConfig.class)
 public interface OpenFeignWareHouseService {
 
     /**
